@@ -1,0 +1,483 @@
+/* 
+body {
+  margin: 0;
+  background: purple;
+}
+
+.wave {
+  width: 100vw;
+  height: 350px;
+  background: red;
+  clip-path: polygon(
+    0% 100%,
+    0% 46%,
+    1.6% 45.2%,
+    3.2% 45.1%,
+    4.8% 45.5%,
+    6.4% 46.4%,
+    8% 48%,
+    9.6% 50.1%,
+    11.2% 52.5%,
+    12.8% 55.2%,
+    14.4% 57.9%,
+    16% 60.4%,
+    17% 62.5%,
+    18.4% 64.8%,
+    18.9% 66.4%,
+    19.0% 67%,
+    19.2% 68.1%,
+    20.8% 69%,
+    21.4% 70.7%,
+    22.4% 72.3%,
+    23.2% 73.8%,
+    24% 75.1%,
+    24.8% 76.2%,
+    25.6% 77.2%,
+    26.4% 78.1%,
+    27.2% 78.9%,
+    28% 79.5%,
+    28.8% 80%,
+    29.6% 82.4%,
+    30.4% 84.7%,
+    31.2% 86.9%,
+    32% 88%,
+    32.8% 90%,
+    33.6% 91.9%,
+    34.4% 92.7%,
+    35.2% 94.4%,
+    36% 96%,
+    36.8% 97.5%,
+    37.6% 97.9%,
+    38.4% 96.9%,
+    39.2% 95.9%,
+    40% 94.9%,
+    40.8% 93.9%,
+    41.6% 92.9%,
+    42.4% 91.9%,
+    43.2% 90.9%,
+    44% 89.9%,
+
+    45.8% 86.6%,
+    46.4% 85.6%,
+    47.2% 84.6%,
+    48% 83.6%,
+    48.8% 82.6%,
+    49.6% 81.6%,
+    50.4% 80.6%,
+    51.2% 79.6%,
+    52% 78.6%,
+    52.8% 77.6%,
+  
+    56% 73.6%,
+    56.8% 72.6%,
+    57.6% 71.6%,
+    58.4% 70.6%,
+    59.2% 69.6%,
+    60% 68.6%,
+    60.8% 68.2%,
+    61.6% 67.8%,
+    62.4% 67.4%,
+    63.2% 67%,
+    64% 66.6%,
+    64.8% 66.2%,
+    65.6% 65.8%,
+  
+    65.6% 68.3%,
+    67.2% 71%,
+    68.8% 74.2%,
+    70.4% 78%,
+    72% 82.3%,
+    73.6% 86.7%,
+    75.2% 91%,
+    76.8% 94.2%,
+    78.4% 96.5%,
+    80% 98%,
+    81.6% 97.8%,
+    83.2% 96.2%,
+    84.8% 94%,
+    86.4% 91.3%,
+    88% 88.2%,
+    89.6% 84.7%,
+    91.2% 80.9%,
+    92.8% 76.7%,
+    94.4% 72.6%,
+    96% 68.9%,
+    97.6% 66.2%,
+    99.2% 64.8%,
+    100% 65.5%,
+    100% 100%
+  );
+} */
+body {
+  margin: 0;
+  background: white;
+}
+
+.wave {
+  width: 100vw;
+  height: 350px;
+  background: red;
+
+  clip-path: polygon(
+    0% 100%,
+    0% 46%,
+    1.6% 45.2%,
+    2.4% 45.15%,
+    3.2% 45.1%,
+    4% 45.3%,
+    4.8% 45.5%,
+    5.6% 45.9%,
+    6.4% 46.4%,
+    7.2% 47.2%,
+    8% 48%,
+    8.8% 49.0%,
+    9.6% 50.1%,
+    10.4% 51.3%,
+    11.2% 52.5%,
+    12% 53.8%,
+    12.8% 55.2%,
+    13.6% 56.5%,
+    14.4% 57.9%,
+    15.2% 59.1%,
+    16% 60.4%,
+    16.5% 61.4%,
+    17% 62.5%,
+    17.7% 63.65%,
+    18.4% 64.8%,
+    18.9% 66.4%,
+    19.0% 67%,
+    19.2% 68.1%,
+    20% 68.6%,
+    20.8% 69%,
+    21.4% 70.7%,
+    22% 71.5%,
+    22.4% 72.3%,
+    22.8% 73.0%,
+    23.2% 73.8%,
+    23.6% 74.45%,
+    24% 75.1%,
+    24.4% 75.65%,
+    24.8% 76.2%,
+    25.2% 76.7%,
+    25.6% 77.2%,
+    26% 77.65%,
+    26.4% 78.1%,
+    26.8% 78.5%,
+    27.2% 78.9%,
+    27.6% 79.2%,
+    28% 79.5%,
+    28.4% 79.75%,
+    28.8% 80%,
+    29.2% 81.2%,
+    29.6% 82.4%,
+    30% 83.55%,
+    30.4% 84.7%,
+    30.8% 85.8%,
+    31.2% 86.9%,
+    31.6% 87.45%,
+    32% 88%,
+    32.4% 89%,
+    32.8% 90%,
+    33.2% 90.95%,
+    33.6% 91.9%,
+    34% 92.3%,
+    34.4% 92.7%,
+    34.8% 93.55%,
+    35.2% 94.4%,
+    35.6% 95.2%,
+    36% 96%,
+    36.4% 96.75%,
+    36.8% 97.5%,
+    37.2% 97.7%,
+    37.6% 97.9%,
+    38% 97.4%,
+    38.4% 96.9%,
+    38.8% 96.4%,
+    39.2% 95.9%,
+    39.6% 95.4%,
+    40% 94.9%,
+    40.4% 94.4%,
+    40.8% 93.9%,
+    41.2% 93.4%,
+    41.6% 92.9%,
+    42% 92.4%,
+    42.4% 91.9%,
+    42.8% 91.4%,
+    43.2% 90.9%,
+    43.6% 90.4%,
+    44% 89.9%,
+    44.9% 88.25%,
+    45.8% 86.6%,
+    46.4% 85.6%,
+    47.2% 84.6%,
+    48% 83.6%,
+    48.8% 82.6%,
+    49.6% 81.6%,
+    50.4% 80.6%,
+    51.2% 79.6%,
+    52% 78.6%,
+    52.8% 77.6%,
+    54.4% 75.6%,
+    56% 73.6%,
+    56.8% 72.6%,
+    57.6% 71.6%,
+    58.4% 70.6%,
+    59.2% 69.6%,
+    60% 68.6%,
+    60.8% 68.2%,
+    61.6% 67.8%,
+    62.4% 67.4%,
+    63.2% 67%,
+    64% 66.6%,
+    64.8% 66.2%,
+    65.6% 65.8%,
+    65.6% 68.3%,
+    67.2% 71%,
+    68.8% 74.2%,
+    70.4% 78%,
+    72% 82.3%,
+    73.6% 86.7%,
+    75.2% 91%,
+    76.8% 94.2%,
+    78.4% 96.5%,
+    80% 98%,
+    81.6% 97.8%,
+    83.2% 96.2%,
+    84.8% 94%,
+    86.4% 91.3%,
+    88% 88.2%,
+    89.6% 84.7%,
+    91.2% 80.9%,
+    92.8% 76.7%,
+    94.4% 72.6%,
+    96% 68.9%,
+    97.6% 66.2%,
+    99.2% 64.8%,
+    100% 65.5%,
+    100% 100%
+  );
+}
+
+
+/* .wave-conic {
+  height: 150px;
+  background: 
+    repeating-conic-gradient(
+      from 270deg,        
+      lightblue 0deg 30deg,
+      transparent 30deg 60deg
+    );
+  background-size: 100px 100px;
+  transform: scaleY(2); 
+}
+  */
+
+/* .section-content {
+  background: lightblue;
+  height: 300px;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 24px;
+} */
+
+
+/* .section-content {
+  background: lightblue;
+  height: 300px;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 24px;
+} */
+
+
+/* .bubble {
+    background: lightblue;
+    padding: 1em;
+    width: fit-content;
+    border-radius: 10px;
+    position: relative;
+  }
+
+.bubble::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: -10px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: lightblue;
+}
+ */
+
+/* .box {
+    width: 100px;
+    height: 100px;
+    background: lightcoral;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    transition: transform .5s ease;
+  }
+  
+  /* Move it */
+  /* .box:hover {
+    transform: translateX(-100px);
+  } */
+
+
+  /* .box {
+    width: 100px;
+    height: 100px;
+    background: skyblue;
+    text-align: center;
+    line-height: 100px;
+    transition: transform 0.3s ease;
+  } */
+  
+  /* .box:hover {
+    transform: translateX(50px) rotate(45deg);
+    transform: scale(.5, 2);
+
+  } */
+
+  /* .box {
+    width: 120px;
+    height: 80px;
+    background: purple;
+    color: white;
+    text-align: center;
+    line-height: 80px;
+    transform: skewy(20deg);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  .card {
+    position: relative;
+    width: 200px;
+    height: 120px;
+    background: #333;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+    line-height: 120px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -60px;
+    width: 150px;
+    height: 40px;
+    background: gold;
+    transform: rotate(-45deg) skewX(20deg) scale(1.2);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+    z-index: 1;
+  }
+  
+  .card:hover {
+    transform: scale(1.05) translateY(-5px);
+  }
+   
+   */
+
+
+
+   /* .box {
+    width: 200px;
+    height: 200px;
+    background: teal;
+    clip-path: circle(50% at 50% 50%);
+  
+    /* clip-path: circle(50% at center); 
+  } */
+  
+/*   
+  .section {
+    height: 300px;
+    background: lightblue;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: deepskyblue;
+    clip-path: polygon(
+      0% 60%,   
+      16% 40%,  
+      33% 60%,       
+      49% 40%,
+      66% 60%,
+      83% 40%,
+      100% 60%,
+      100% 100%, 
+      0% 100%    
+    );
+  }
+   */
+
+   /* .wave-section {
+    height: 300px;
+    background: lightblue;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .wave-shape {
+    position: absolute;
+    bottom: 0;
+    width: 200%;
+    height: 200px;
+    background: deepskyblue;
+    border-radius: 50%;
+    left: -50%;
+    transform: translateY(50%);
+  }
+  
+ */
+
+ /* .section {
+  height: 300px;
+  background: lightblue;
+  position: relative;
+  overflow: hidden;
+}
+.wave {
+  position: absolute;
+   bottom: 0;
+  left: -50%;
+  width: 200%;
+  height: 200px;
+  background: deepskyblue;
+  border-radius: 50%;
+  transform: translateY(30%);
+} */
+
+
+/* .circle {
+  width: 100px;
+  height: 200px;
+  background: deepskyblue;
+  border-radius: 50%;
+  transform: translateY(50%);
+} */
